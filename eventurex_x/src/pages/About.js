@@ -30,7 +30,7 @@ function About() {
 
         <div style={styles.teamMember}>
           <p style={styles.textBlue}><strong>Abhinav Ballal</strong></p>
-          <p style={styles.text}>Worked on the routing of all the pages and contributed to the 'Create Event' mechanism.</p>
+          <p style={styles.text}>Worked on the routing of all the pages and frontend!</p>
         </div>
       </center>
     </div>
@@ -39,7 +39,7 @@ function About() {
 
 const styles = {
   container: {
-    backgroundColor: '#2c3e50', // Dark background for contrast
+    backgroundColor: '#0e0135a7', // Dark background for contrast
     color: '#fff', // White text color
     padding: '60px 20px',
     height: '100vh',

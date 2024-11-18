@@ -1,0 +1,24 @@
+.container {
+
+    max-width: '400px';
+    margin: '0 auto';
+    padding: '20px';
+    border: '1px solid #ccc';
+    border-radius: '5px';
+    box-shadow: '2px 2px 10px rgba(0,0,0,0.1)';
+  }
+
+  .create-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .create-button:hover {
+    background-color: #0056b3;
+  }

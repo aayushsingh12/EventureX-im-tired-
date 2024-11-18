@@ -10,9 +10,12 @@ import CreateEvent from './pages/CreateEvent';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './App.css';
+import background from './eventmanagement-background.png';
 
 function App() {
   return (
+    <div style={{ backgroundImage: `url(${background})` }} className="body">
     <Router>
       <Navbar />
       <div className="content">
@@ -30,6 +33,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </div>
   );
 }
 

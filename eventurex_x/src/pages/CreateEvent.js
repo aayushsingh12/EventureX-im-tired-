@@ -2,6 +2,7 @@ import {useState} from 'react';
 import {Link} from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import './CreateEvent.css';
 
 
 function CreateEvent() {
@@ -20,7 +21,7 @@ function CreateEvent() {
 }
 
   return (
-    <div style={styles.container}>
+    <div className='container'>
       <h2>Create Event</h2>
       <form onSubmit={handleCreateEvent} style={styles.form}>
         <label>Event Name:</label>
@@ -46,21 +47,14 @@ function CreateEvent() {
           required
           style={styles.input}
         />
-        <button type="submit" style={styles.button}>Create Event</button>
+        <button type="submit" className='create-button'>Create Event</button>
       </form>
     </div>
   );
 }
 
 const styles = {
-  container: {
-    maxWidth: '400px',
-    margin: '0 auto',
-    padding: '20px',
-    border: '1px solid #ccc',
-    borderRadius: '5px',
-    boxShadow: '2px 2px 10px rgba(0,0,0,0.1)',
-  },
+  
   form: {
     display: 'flex',
     flexDirection: 'column',
@@ -70,15 +64,7 @@ const styles = {
     padding: '10px',
     fontSize: '16px',
   },
-  button: {
-    padding: '10px',
-    fontSize: '16px',
-    backgroundColor: '#007BFF',
-    color: '#fff',
-    border: 'none',
-    borderRadius: '5px',
-    cursor: 'pointer',
-  },
+  
   error: {
     color: 'red',
   },

@@ -2,6 +2,7 @@ import {useState} from 'react';
 import {Link} from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import './Login.css';
 
 function Login() {
 
@@ -22,7 +23,7 @@ function Login() {
     }
 
   return (
-    <div style={styles.container}>
+    <div className='container'>
       <h2>Login</h2>
       <form onSubmit={handleSubmit} style={styles.form}>
         <label>Email:</label>
@@ -41,7 +42,7 @@ function Login() {
           style={styles.input}
           onChange={(e)=> setPassword(e.target.value)}
         />
-        <button style={styles.button}>Login</button>
+        <button className='login-button'>Login</button>
         </form>
      
       
@@ -50,14 +51,7 @@ function Login() {
 }
 
 const styles = {
-  container: {
-    maxWidth: '400px',
-    margin: '0 auto',
-    padding: '20px',
-    border: '1px solid #ccc',
-    borderRadius: '5px',
-    boxShadow: '2px 2px 10px rgba(0,0,0,0.1)',
-  },
+  
   form: {
     display: 'flex',
     flexDirection: 'column',

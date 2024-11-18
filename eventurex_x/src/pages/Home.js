@@ -1,19 +1,28 @@
 // src/pages/Home.js
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import './Home.css'
+import './Home.css';
 
 function Home() {
-  
+  const navigate = useNavigate();
 
   return (
-    <div>
-      <h1>Events Near You!</h1>
-      <li>
-            <h2>TEST EVENT NAME</h2>
-            <p>TEST EVENT DESC</p>
-            <p>Date: TEST EVENT DATE</p>
-          </li>
+    <div className="home-container">
+      <div className="center-div">
+        <h1>Welcome to EventureX!</h1>
+        <p>
+          The best application for joining, creating, and managing virtual events
+          seamlessly. Explore all that EventureX has to offer and make your events
+          extraordinary!
+        </p>
+        <button className="btn btn-signup" onClick={() => navigate('/signup')}>
+          Sign Up
+        </button>
+        <button className="btn btn-faq" onClick={() => navigate('/faq')}>
+          FAQ
+        </button>
+      </div>
     </div>
   );
 }

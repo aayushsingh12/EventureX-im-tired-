@@ -12,6 +12,8 @@ import Signup from './pages/Signup';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import background from './eventmanagement-background.png';
+import FAQs from './pages/faq';
+
 
 function App() {
   return (
@@ -28,6 +30,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/faq" element={<FAQs />} />
       
           
         </Routes>

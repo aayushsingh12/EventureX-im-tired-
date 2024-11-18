@@ -30,7 +30,7 @@ function About() {
 
         <div style={styles.teamMember}>
           <p style={styles.textBlue}><strong>Abhinav Ballal</strong></p>
-          <p style={styles.text}>Worked on the routing of all the pages and contributed to the 'Create Event' mechanism.</p>
+          <p style={styles.text}>Worked on the routing of all the pages and frontend!</p>
         </div>
       </center>
     </div>

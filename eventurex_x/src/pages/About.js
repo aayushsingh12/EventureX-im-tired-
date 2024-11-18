@@ -39,7 +39,7 @@ function About() {
 
 const styles = {
   container: {
-    backgroundColor: '#2c3e50', // Dark background for contrast
+    backgroundColor: '#0e0135a7', // Dark background for contrast
     color: '#fff', // White text color
     padding: '60px 20px',
     height: '100vh',

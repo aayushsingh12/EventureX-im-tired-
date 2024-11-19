@@ -52,8 +52,8 @@ function JoinEvent() {
   };
 
   return (
-    <div>
-      <h1>Join an Event</h1>
+    <div className='container'>
+      <h1>Join an Event!</h1>
       <ul className='events' >
         {events.map((event) => (
           <li key={event._id} >

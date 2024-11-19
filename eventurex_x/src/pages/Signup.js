@@ -2,6 +2,7 @@ import {useState} from 'react';
 import {Link} from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
+import './Signup.css';
 
 function Signup() {
     const [name, setName]= useState()
@@ -19,7 +20,7 @@ function Signup() {
     }
 
   return (
-    <div style={styles.container}>
+    <div className='container'>
       <h2>Signup</h2>
       <form onSubmit={handleSubmit} style={styles.form}>
         <label>Name:</label>
@@ -56,15 +57,7 @@ function Signup() {
 }
 
 const styles = {
-    container: {
-      maxWidth: '400px',
-      margin: '0 auto',
-      padding: '30px',
-      border: '1px solid #ddd',
-      borderRadius: '8px',
-      boxShadow: '0px 4px 12px rgba(0,0,0,0.1)',
-      backgroundColor: '#f9f9f9',
-    },
+    
     form: {
       display: 'flex',
       flexDirection: 'column',

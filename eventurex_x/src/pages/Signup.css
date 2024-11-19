@@ -1,0 +1,11 @@
+.container {
+    max-width: 400px; /* Remove quotes */
+    margin: 20px auto; /* Center the container with top and bottom margins */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #f5f5f5b0; /* Optional: Add a subtle background color */
+  }
